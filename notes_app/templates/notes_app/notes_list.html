@@ -1,0 +1,10 @@
+
+
+<h1> Notes List ! </h1>
+
+<ul>
+  {% for note in notes_list %}
+  <li><a href="{% url 'notes:note-details' note.slug %}">{{note}}</a> </li>
+  {% endfor %}
+
+</ul>
